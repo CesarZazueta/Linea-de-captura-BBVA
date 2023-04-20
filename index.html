@@ -10,26 +10,17 @@
     <section class="form_Registro">
     <h1>Registro de datos</h1>
     <h2>Establecimiento:</h2>
-    <input type="number" class="Solo_Numeros" name="Id_Establecimiento" id="Id_Establecimiento" placeholder="Ingrese Establecimiento" maxlength="6" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  onkeyup="javascript:this.value=this.value.toUpperCase();">
+    <select class="Solo_Numeros" name="Establecimiento" id="Id_Establecimiento">
+        <option value="5432">5432</option>
+        <option value="3423">3423</option>
+        <option value="1234">1234</option>
+        <option value="3521">3521</option>
+    </select>
     <h2>Tipo de pago:</h2>
-    <input type="number" class="Solo_Numeros" name="Id_Tipo_Pago" id="Id_Tipo_Pago" placeholder="Ingrese tipo de pago" maxlength="2" min="00" max="99"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  onkeyup="javascript:this.value=this.value.toUpperCase();">
+    <input type="number" class="Solo_Numeros" name="Id_Tipo_Pago" id="Id_Tipo_Pago" placeholder="Ingrese el numero de tipo pago (1 al 99) " value="01" maxlength="2" min="01" max="99"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  onkeyup="javascript:this.value=this.value.toUpperCase();">
     <h2>Importe:</h2>
-    <div >
-        <div id="ImporteBBVA">
-            <div  class="Importe">
-                <input class="Pesos" type="text" value="$" maxlength="1" placeholder="$" disabled/>
-            </div>
-            <div  class="Importe">
-            <input class="Solo_Numeros" type="text" id="Id_Importe_Entero" placeholder="00" value="" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
-            </div>
-            <div  class="Importe">
-                <input class="Punto" type="text" value="." maxlength="1" placeholder="." disabled/>
-            </div>
-            <div  class="Importe">
-            <input class="Solo_Numeros" type="text" id="Id_Importe_Decimal" placeholder="00" value="00" maxlength="2" min="00" max="99" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" >
-            </div>
-        </div>
-    </div>
+    <input class="Solo_Numeros" type="text" id="Id_Importe_Entero" placeholder="00" value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" onblur="convertirMoneda()" onfocus="convertirEntero()" />
+
     <h2>Fecha</h2>
     <h2>Dia/Mes/Año</h2>
     <div>
@@ -63,7 +54,7 @@
             <option value="27">27</option>
             <option value="28">28</option>
             <option value="29">29</option>
-            <option value="30">30</option> 
+            <option value="30">30</option>
             <option value="31">31</option> </select>
         <select class="Fecha" name="Id_Mes" id="Id_Mes">
             <option value="01">01</option>
@@ -81,9 +72,9 @@
         <input  class="Fecha" type="number" name="Id_Anio" id="Id_Anio" value="2013" min="2013" >
     </div>
     <h2>Referencia Principal:</h2>
-    <input type="text" class="De_Todo" name="Id_Referencia_Principal" id="Id_Principal" placeholder="GAJR82772571" maxlength="30">
+    <input type="text" class="De_Todo" name="Id_Referencia_Principal" id="Id_Principal" placeholder="GAJR82772571" maxlength="30" onkeyup="ValidarCaracteres(this);" >
     <h2>Referencia Adicional:</h2>
-    <input type="text" class="De_Todo" name="Id_Referencia_Adicional" id="Id_Adicional" placeholder="" maxlength="16">
+    <input type="text" class="De_Todo" name="Id_Referencia_Adicional" id="Id_Adicional" placeholder="" maxlength="16"   disabled>
     <div>
         <input class="boton" type="submit" id="Id_Obtener_LineaCaptura" value="Obtener linea de captura">
     </div>
