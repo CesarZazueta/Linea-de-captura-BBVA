@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(img/Fondo-BBVA.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+
+}
+
+.form_Registro{
+    width: 400px;
+    background: #24304c;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form_Linea_Captura{
+    width: 1400px;
+    background: #24304c;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form_Registro h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.form_Registro h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.form_Registro h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.Solo_Numeros {
+    width: 100%;
+    background: #24304c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.Pesos {
+    width: 10px;
+    background: #24304c;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.Punto {
+    width: 10px;
+    background: #24304c;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 18  px;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    color: white;
+}
+
+.Fecha {
+    background: #24304c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.De_Todo {
+    width: 100%;
+    background: #24304c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form_Registro .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+#ImporteBBVA {
+    display: inline-flex;
+}
